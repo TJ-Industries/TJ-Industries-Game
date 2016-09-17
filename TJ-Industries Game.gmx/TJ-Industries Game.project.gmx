@@ -11,6 +11,7 @@
     <sprite>sprites\spr_main_pl_up</sprite>
     <sprite>sprites\spr_main_pl_down</sprite>
     <sprite>sprites\spr_wall_stone1</sprite>
+    <sprite>sprites\spr_player_down</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
