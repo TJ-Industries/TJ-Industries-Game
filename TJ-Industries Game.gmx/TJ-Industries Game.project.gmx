@@ -11,7 +11,13 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <rooms name="rooms"/>
+  <objects name="objects">
+    <object>objects\obj_main_player</object>
+    <object>objects\obj_wall_stone1</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\room0</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
