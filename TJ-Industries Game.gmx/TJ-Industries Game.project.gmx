@@ -15,9 +15,13 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_variables.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_main_player</object>
     <object>objects\obj_wall_stone1</object>
+    <object>objects\obj_camera</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
