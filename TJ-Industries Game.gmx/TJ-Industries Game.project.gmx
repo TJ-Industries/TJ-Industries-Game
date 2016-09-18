@@ -8,8 +8,12 @@
   <sprites name="sprites">
     <sprites name="pl_main">
       <sprite>sprites\spr_player_left</sprite>
+      <sprite>sprites\spr_player_left_up</sprite>
+      <sprite>sprites\spr_player_right_up</sprite>
       <sprite>sprites\spr_player_up</sprite>
       <sprite>sprites\spr_player_down</sprite>
+      <sprite>sprites\spr_player_left_down</sprite>
+      <sprite>sprites\spr_player_right_down</sprite>
       <sprite>sprites\spr_player_right</sprite>
     </sprites>
     <sprites name="walls">
