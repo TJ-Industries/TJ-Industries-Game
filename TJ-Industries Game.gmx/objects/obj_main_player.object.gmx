@@ -53,6 +53,9 @@ phy_fixed_rotation = true;
 
 scr_variables();
 var spd = 2;
+if (keyboard_check(vk_shift)){ 
+spd = 3;
+}
 
 //Get the axis
 var xaxis = (right - left);
@@ -70,7 +73,7 @@ len = 0;
 
 //Speed
 hspd = lengthdir_x(len,dir);
-vspd = lengthdir_y(len,dir); 
+vspd = lengthdir_y(len,dir);
 
 //move
 phy_position_x += hspd;

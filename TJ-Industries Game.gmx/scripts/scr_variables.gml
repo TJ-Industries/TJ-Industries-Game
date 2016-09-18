@@ -1,10 +1,10 @@
 ///This is a script for some variables
 
 //Movement
-right = (keyboard_check(vk_right));
-left = (keyboard_check(vk_left));
-down = (keyboard_check(vk_down));
-up = (keyboard_check(vk_up));
+right = (keyboard_check(ord('D')));
+left = (keyboard_check(ord('A')));
+down = (keyboard_check(ord('S')));
+up = (keyboard_check(ord('W')));
 
 if (!up and !down and !left and !right){
     image_index = 0
