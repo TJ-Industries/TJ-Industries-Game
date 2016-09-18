@@ -18,20 +18,22 @@
     </sprites>
     <sprites name="walls">
       <sprite>sprites\spr_wall_stone1</sprite>
+      <sprite>sprites\spr_door</sprite>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background1</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <scripts name="variables">
-      <script>scripts\scr_variables.gml</script>
-    </scripts>
+    <script>scripts\scr_variables.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="pl_main">
       <object>objects\obj_main_player</object>
     </objects>
     <objects name="wall">
+      <object>objects\obj_door</object>
       <object>objects\obj_wall_stone1</object>
     </objects>
     <objects name="random">
@@ -39,9 +41,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <rooms name="main">
-      <room>rooms\rm_main</room>
-    </rooms>
+    <room>rooms\rm_main</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
