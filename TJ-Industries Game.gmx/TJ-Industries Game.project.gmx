@@ -6,24 +6,38 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_wall_stone1</sprite>
-    <sprite>sprites\spr_player_down</sprite>
-    <sprite>sprites\spr_player_up</sprite>
-    <sprite>sprites\spr_player_left</sprite>
-    <sprite>sprites\spr_player_right</sprite>
+    <sprites name="pl_main">
+      <sprite>sprites\spr_player_left</sprite>
+      <sprite>sprites\spr_player_up</sprite>
+      <sprite>sprites\spr_player_down</sprite>
+      <sprite>sprites\spr_player_right</sprite>
+    </sprites>
+    <sprites name="walls">
+      <sprite>sprites\spr_wall_stone1</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scr_variables.gml</script>
+    <scripts name="variables">
+      <script>scripts\scr_variables.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_main_player</object>
-    <object>objects\obj_wall_stone1</object>
-    <object>objects\obj_camera</object>
+    <objects name="pl_main">
+      <object>objects\obj_main_player</object>
+    </objects>
+    <objects name="wall">
+      <object>objects\obj_wall_stone1</object>
+    </objects>
+    <objects name="random">
+      <object>objects\obj_camera</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_main</room>
+    <rooms name="main">
+      <room>rooms\rm_main</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
