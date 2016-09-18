@@ -96,22 +96,22 @@ if (hspd &gt; 0){
     }    
 // Right+Down
 if (hspd &gt; 0 &amp;&amp; vspd &gt; 0) {
-    //sprite_index =
+    sprite_index = spr_player_right_down 
     }
     
 // Left+Up
 if (hspd &lt; 0 &amp;&amp; vspd &lt; 0) {
-    //sprite_index =
+    sprite_index = spr_player_left_up
     }
     
 // Left+Down
 if (hspd &lt; 0 &amp;&amp; vspd &gt; 0) {
-    //sprite_index =
+    sprite_index = spr_player_left_down 
     }
     
 // Right+Up
 if (hspd &gt; 0 &amp;&amp; vspd &lt; 0) {
-    //sprite_index = 
+    sprite_index = spr_player_right_up
     }
     
 
