@@ -79,18 +79,39 @@ phy_position_y += vspd;
 //control the sprite
 image_speed = sign(len)*.2;
 if (len == 0) image_index = 0;
-
+// Up Down
 if (vspd &gt; 0){
     sprite_index = spr_player_down;
     } else if (vspd &lt; 0) {
     sprite_index = spr_player_up;
     }
-
+// Left Right
 if (hspd &gt; 0){
     sprite_index = spr_player_right;
     } else if (hspd &lt; 0){
     sprite_index = spr_player_left;
     }    
+// Right+Down
+if (hspd &gt; 0 &amp;&amp; vspd &gt; 0) {
+    //sprite_index =
+    }
+    
+// Left+Up
+if (hspd &lt; 0 &amp;&amp; vspd &lt; 0) {
+    //sprite_index =
+    }
+    
+// Left+Down
+if (hspd &lt; 0 &amp;&amp; vspd &gt; 0) {
+    //sprite_index =
+    }
+    
+// Right+Up
+if (hspd &gt; 0 &amp;&amp; vspd &lt; 0) {
+    //sprite_index = 
+    }
+    
+
 </string>
           </argument>
         </arguments>
