@@ -8,10 +8,11 @@
   <sprites name="sprites">
     <sprite>sprites\spr_main_pl_right</sprite>
     <sprite>sprites\spr_main_pl_left</sprite>
-    <sprite>sprites\spr_main_pl_up</sprite>
-    <sprite>sprites\spr_main_pl_down</sprite>
     <sprite>sprites\spr_wall_stone1</sprite>
     <sprite>sprites\spr_player_down</sprite>
+    <sprite>sprites\spr_player_up</sprite>
+    <sprite>sprites\spr_player_left</sprite>
+    <sprite>sprites\spr_player_right</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>

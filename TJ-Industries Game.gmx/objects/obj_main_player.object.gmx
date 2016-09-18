@@ -57,17 +57,17 @@ image_speed = .3;
 
 if (right) {
     phy_position_x += t;
-    sprite_index = spr_main_pl_right;
+    sprite_index = spr_player_right;
 }
 
 if (left) {
     phy_position_x -= t;
-    sprite_index = spr_main_pl_left;
+    sprite_index = spr_player_left;
 }
 
 if (up) {
     phy_position_y -= t;
-    sprite_index = spr_main_pl_up;
+    sprite_index = spr_player_up;
 }
 
 if (down) {
