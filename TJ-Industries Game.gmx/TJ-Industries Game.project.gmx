@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\Test_for_Tom</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="pl_main">
       <sprite>sprites\spr_player_left</sprite>
