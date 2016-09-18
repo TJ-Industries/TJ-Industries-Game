@@ -30,7 +30,9 @@
     <script>scripts\scr_variables.gml</script>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_main_player</object>
+    <objects name="pl_main">
+      <object>objects\obj_main_player</object>
+    </objects>
     <objects name="wall">
       <object>objects\obj_door</object>
       <object>objects\obj_wall_stone1</object>
