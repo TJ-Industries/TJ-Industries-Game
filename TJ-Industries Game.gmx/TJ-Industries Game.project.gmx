@@ -21,6 +21,7 @@
       <sprite>sprites\spr_door</sprite>
     </sprites>
     <sprite>sprites\spr_shadow_player</sprite>
+    <sprite>sprites\spr_enemy</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -30,9 +31,8 @@
     <script>scripts\scr_variables.gml</script>
   </scripts>
   <objects name="objects">
-    <objects name="pl_main">
-      <object>objects\obj_main_player</object>
-    </objects>
+    <object>objects\obj_lifeform_parent</object>
+    <object>objects\obj_main_player</object>
     <objects name="wall">
       <object>objects\obj_door</object>
       <object>objects\obj_wall_stone1</object>
@@ -40,6 +40,7 @@
     <objects name="random">
       <object>objects\obj_camera</object>
     </objects>
+    <object>objects\obj_enemy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
