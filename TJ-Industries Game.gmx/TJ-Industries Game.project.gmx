@@ -23,6 +23,7 @@
     </sprites>
     <sprites name="enemys">
       <sprite>sprites\spr_enemy_herman</sprite>
+      <sprite>sprites\spr_undead_boss</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
