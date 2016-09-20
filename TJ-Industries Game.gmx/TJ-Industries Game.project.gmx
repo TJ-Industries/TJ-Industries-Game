@@ -16,6 +16,9 @@
       <sprite>sprites\spr_player_right_down</sprite>
       <sprite>sprites\spr_player_right</sprite>
       <sprite>sprites\spr_shadow_player</sprite>
+      <sprite>sprites\spr_attack_left</sprite>
+      <sprite>sprites\spr_attack_right</sprite>
+      <sprite>sprites\spr_attack_up</sprite>
     </sprites>
     <sprites name="walls">
       <sprite>sprites\spr_wall_stone1</sprite>
