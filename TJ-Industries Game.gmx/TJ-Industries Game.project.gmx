@@ -44,6 +44,7 @@
       <object>objects\obj_camera</object>
     </objects>
     <object>objects\obj_enemy_herman</object>
+    <object>objects\obj_enemy_undead_boss</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
