@@ -21,7 +21,7 @@
       <sprite>sprites\spr_wall_stone1</sprite>
       <sprite>sprites\spr_door</sprite>
     </sprites>
-    <sprites name="enemys">
+    <sprites name="enemies">
       <sprite>sprites\spr_enemy_herman</sprite>
       <sprite>sprites\spr_undead_boss</sprite>
     </sprites>
@@ -32,6 +32,8 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_variables.gml</script>
+    <script>scripts\scr_move_state.gml</script>
+    <script>scripts\scr_attack_state.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_lifeform_parent</object>

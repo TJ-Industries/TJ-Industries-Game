@@ -26,8 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>///Anti Rotation
+scr_variables();
 event_inherited();
-
+state = scr_move_state;
 </string>
           </argument>
         </arguments>
@@ -51,72 +52,8 @@ event_inherited();
           <argument>
             <kind>1</kind>
             <string>///Basic Movements 
+script_execute(state)
 event_inherited();
-
-scr_variables();
-var spd = 2;
-if (keyboard_check(vk_shift)){ 
-spd = 3;
-}
-
-//Get the axis
-var xaxis = (right - left);
-var yaxis = (down - up);
-
-//get direction
-var dir = point_direction(0,0,xaxis,yaxis);
-
-//get length
-if (xaxis == 0 and yaxis == 0) {
-len = 0;
-}  else {    
-    len = spd;
-}
-
-//Speed
-hspd = lengthdir_x(len,dir);
-vspd = lengthdir_y(len,dir);
-
-//move
-phy_position_x += hspd;
-phy_position_y += vspd;
-
-//control the sprite
-image_speed = sign(len)*.2;
-if (len == 0) image_index = 0;
-// Up Down
-if (vspd &gt; 0){
-    sprite_index = spr_player_down;
-    } else if (vspd &lt; 0) {
-    sprite_index = spr_player_up;
-    }
-// Left Right
-if (hspd &gt; 0){
-    sprite_index = spr_player_right;
-    } else if (hspd &lt; 0){
-    sprite_index = spr_player_left;
-    }    
-// Right+Down
-if (hspd &gt; 0 &amp;&amp; vspd &gt; 0) {
-    sprite_index = spr_player_right_down 
-    }
-    
-// Left+Up
-if (hspd &lt; 0 &amp;&amp; vspd &lt; 0) {
-    sprite_index = spr_player_left_up
-    }
-    
-// Left+Down
-if (hspd &lt; 0 &amp;&amp; vspd &gt; 0) {
-    sprite_index = spr_player_left_down 
-    }
-    
-// Right+Up
-if (hspd &gt; 0 &amp;&amp; vspd &lt; 0) {
-    sprite_index = spr_player_right_up
-    }
-    
-
 </string>
           </argument>
         </arguments>
@@ -144,6 +81,32 @@ if (room_exists(other.new_room)) {
     room_goto(other.new_room);
     x = other.new_x;
     y = other.new_y;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Change back to move state
+if (state == scr_attack_state) {
+    state = scr_move_state;
 }
 </string>
           </argument>
