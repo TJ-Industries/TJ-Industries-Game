@@ -28,6 +28,7 @@
       <sprite>sprites\spr_enemy_herman</sprite>
       <sprite>sprites\spr_undead_boss</sprite>
     </sprites>
+    <sprite>sprites\spr_damage</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -50,6 +51,7 @@
     </objects>
     <object>objects\obj_enemy_herman</object>
     <object>objects\obj_enemy_undead_boss</object>
+    <object>objects\obj_damage</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
