@@ -6,11 +6,14 @@ switch (sprite_index) {
         break;
     
     case spr_player_up:
+        sprite_index = spr_attack_up;
         break;
         
     case spr_player_left:
+        sprite_index = spr_attack_left
         break;
     
     case spr_player_right:
+        sprite_index = spr_attack_right
         break;
 }
